@@ -64,7 +64,7 @@ p {
   min-width: 300px;
   min-height: 275px;
   background-color: var(--clr-accent-purple);
-  background-image: url(./images/image-header-mobile.jpg);
+  background-image: url("./images/image-header-mobile.jpg");
   background-blend-mode: multiply;
   background-size: cover;
 }
