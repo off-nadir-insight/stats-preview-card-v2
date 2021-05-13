@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Code](https://github.com/off-nadir-insight/stats-preview-card-v2)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://off-nadir-insight.github.io/stats-preview-card-v2/)
 
 ## My process
 
