@@ -38,7 +38,27 @@ p {
   max-width: 354px;
   border-radius: 10px;
   overflow: auto;
-  margin: 5rem auto;
+  margin: 5rem auto 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+  }
+  .outer-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: row;
+    max-width: 1100px;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
 }
 
 .banner-img {
@@ -51,10 +71,25 @@ p {
   background-size: cover;
 }
 
+@media screen and (min-width: 700px) {
+  .banner-img {
+    order: 2;
+    width: 50%;
+    background-position: right;
+  }
+}
+
 .content {
   background-color: var(--clr-blue-mid);
   padding: 2em 2em;
   text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .content {
+    order: 1;
+    width: 50%;
+  }
 }
 
 .accent-clr {
@@ -66,6 +101,12 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   margin: 2em 0 0;
+}
+
+@media screen and (min-width: 900px) {
+  .stats {
+    flex-direction: row;
+  }
 }
 
 .stat {
@@ -92,9 +133,16 @@ p {
 }
 
 .attribution {
+  opacity: 25%;
+  margin-bottom: 1em;
   font-size: 11px;
   text-align: center;
-  margin-bottom: 1em;
+  transition: opacity 200ms;
+}
+
+.attribution:hover,
+.attribution:focus {
+  opacity: 100%;
 }
 
 .attribution a {
