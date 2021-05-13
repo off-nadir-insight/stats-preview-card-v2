@@ -44,8 +44,6 @@ p {
 }
 
 @media screen and (min-width: 700px) {
-  body {
-  }
   .outer-container {
     height: 100vh;
     display: flex;
